@@ -1,0 +1,82 @@
+*{
+    font-family: 'Teko', sans-serif;
+    color: white
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+nav>ul>li{
+    display: block;
+    padding: 5px 20px;
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+
+.nav-link{
+    color: white;
+    text-transform: uppercase;
+}
+
+body{
+    background-image: url("/artist-project/resources/images/background.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/*Logga i mitten*/
+main>section>img{
+    display: block;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -60%);
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    margin-top: 0px;
+    left: 0;
+    right: 0;
+    padding: 2em 1;
+}
+
+footer a{
+    margin-right: 20px;
+
+}
+
+
+
+
+@media (min-width: 767px){
+    header{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 30px 20px 0px 40px;
+        margin-bottom: 75px;
+    }
+}
+
+
+@media (min-width: 767px){
+    footer{
+        justify-content: flex-end;
+    }
+}
