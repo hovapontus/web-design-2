@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--https://www.bootstrapcdn.com/-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/artist-project/resources/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/artist-project/resources/css/style.css">
+    <link rel="stylesheet" href="/artist-project/resources/css/video.css">
     <script src="/artist-project/resources/js/script.js"></script>
 </head>
-<body>
+<body class="videos-background">
     <header>
         <h1>
             <a class="nav-link" href="/artist-project/index.html">
@@ -36,8 +39,13 @@
         </nav>
     </header>
     <main data-content-field="main-content">
-        <section>
-            <img src="/artist-project/resources/images/hovzter.png" alt="Hovzter">
+        <section id="video-gallery" class="d-flex flex-column justify-content-center align-items-center" style="min-height: 70vh;">
+            <article>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/oTTSHFfb5kE?si=_hUYWFY4ydumd6z6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+            <article>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/QCeyggEl2Yg?si=Q5jpP4zMuLRldIAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
         </section>
     </main>
     <footer>

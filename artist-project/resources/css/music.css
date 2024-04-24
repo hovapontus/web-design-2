@@ -1,0 +1,79 @@
+section#music-gallery>article>div.interact {
+    display: flex;
+}
+
+iframe {
+    border: none;
+    background: transparent;
+    margin: 1em 0 1em 0; /*forsts'tt*/
+}
+
+.responsive {
+    width: 100%;
+}
+
+div, section, img{
+    margin: 0px;
+    padding: 0px;
+    border: 0px dashed red;
+}
+
+
+section#music-gallery>article>* {
+    flex: 1 1 auto;
+}
+
+section#music-gallery>article>div.interact {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+main {
+    margin: 0px auto;
+    padding: 0 20px;
+}
+
+
+
+section#music-gallery>article {
+    margin: 40px 0px 60px 0px;
+}
+
+section#music-gallery>article>img {
+    width: 100%;
+    max-width: 505px;
+    height: auto;
+}
+
+/*vänster och höger under 900*/
+@media (max-width:900px){
+    main {
+        padding: 0 10px;
+    }
+}
+
+
+@media (min-width: 767px) {
+    iframe {
+        width: 100%;
+    }
+    main {
+        max-width: 900px;
+        padding-bottom: 100px;
+    }
+
+    section#music-gallery>article {
+        display: flex;
+        gap: 20px;
+    }
+
+    section#music-gallery>article>div.interact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section#music-gallery>article>div.interact>iframe {
+        height: 100% !important;
+        padding: 10px 0;
+    }
+}
