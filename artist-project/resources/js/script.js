@@ -1,6 +1,8 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOM fully loaded and parsed");
+    /*MUSIC BACKGROUND*/
     let musicNav = document.getElementById('music-nav');
     musicNav.addEventListener('mouseover', function(){
         if(!window.location.href.includes('music.html')) {
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
+    /*VIDEO BACKGROUND*/
     let videoNav = document.getElementById('video-nav');
     videoNav.addEventListener('mouseover', function(){
         if(!window.location.href.includes('videos.html')) {
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-
+    /*TOUR BACKGROUND*/
     let tourNav = document.getElementById('tour-nav');
     tourNav.addEventListener('mouseover', function(){
         if(!window.location.href.includes('tour.html')) {
@@ -45,19 +47,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    /*CONTACT BACKGROUND*/
+    let contactNav = document.getElementById('contact-nav');
+    contactNav.addEventListener('mouseover', function(){
+        if(!window.location.href.includes('contact.html')) {
+            document.body.style.backgroundImage = "url('/artist-project/resources/images/contact-nav-image.png')";
+        }
+        });
 
+    contactNav.addEventListener('mouseout', () => {
+        if(!window.location.href.includes('contact.html')) {
+            document.body.style.backgroundImage = "url('/artist-project/resources/images/background.png')";
+        }
+        });
+    
+    
+    /*SCROLL EFFEKT*/
+    const images = document.querySelectorAll('img');
 
-
-
-
-
-
-    let aboutNav = document.getElementById('about-nav');
-    aboutNav.addEventListener('mouseover', function(){
-        document.body.style.backgroundImage = "url('/artist-project/resources/images/about-nav-image.png')";
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('img-visible');
+            } else {
+                entry.target.classList.remove('img-visible');
+            }
+        });
+    }, {
+        threshold: 0.5
     });
-
-    aboutNav.addEventListener('mouseout', () => {
-        document.body.style.backgroundImage = "url('/artist-project/resources/images/background.png')";
+    images.forEach(img => {
+        observer.observe(img);
     });
 });

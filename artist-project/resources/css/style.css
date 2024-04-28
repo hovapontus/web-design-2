@@ -40,15 +40,17 @@ body{
 }
 
 .tour-background{
-    background-image: url(/artist-project/resources/images/tour-nav-image.png);
+    background-image: url("/artist-project/resources/images/tour-nav-image.png");
 }
 
-.about-background{
-    background-image: url(/artist-project/resources/images/about-nav-image.png);
+.contact-background{
+    background-image: url("/artist-project/resources/images/contact-nav-image.png");
 }
 
 /*Logga i mitten*/
 main>section>img{
+    /*Försökte centrera loggan med hjälp av bootstrap och tog hjälp av informationen från bland annat detta ställe: https://blog.hubspot.com/website/center-an-image-in-html
+    hur som helst fick jag inte löst det utan fortsatte därav med min lösning innehållande position: absolute */
     display: block;
     width: 250px;
     position: absolute;
@@ -60,6 +62,7 @@ main>section>img{
 
 
 footer{
+    /*Samma gäller här som ovan*/
     position: fixed;
     left: 0;
     bottom: 0;

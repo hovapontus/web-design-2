@@ -18,6 +18,15 @@ div, section, img{
     border: 0px dashed red;
 }
 
+img {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.img-visible {
+    opacity: 1;
+}
+
 
 section#music-gallery>article>* {
     flex: 1 1 auto;
@@ -64,16 +73,15 @@ section#music-gallery>article>img {
 
     section#music-gallery>article {
         display: flex;
-        gap: 20px;
+        gap: 20px;      /*Kollat så det funkar med px här*/
     }
 
     section#music-gallery>article>div.interact {
         flex-direction: column;
-        gap: 20px;
     }
 
     section#music-gallery>article>div.interact>iframe {
-        height: 100% !important;
+        height: 100%; /*Kanska ha important*/
         padding: 10px 0;
     }
 }
