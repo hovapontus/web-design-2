@@ -24,27 +24,28 @@ nav>ul>li{
 }
 
 body{
-    background-image: url("/artist-project/resources/images/background.png");
+    background-image: url("../images/background.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
+/*Här sätta bakgrundbild på body när respektive html klickas*/
 .music-background{
-    background-image: url("/artist-project/resources/images/music-nav-image.png");
+    background-image: url("../images/music-nav-image.png");
 }
 
 .videos-background{
-    background-image: url("/artist-project/resources/images/video-nav-image.png");
+    background-image: url("../images/video-nav-image.png");
 }
 
 .tour-background{
-    background-image: url("/artist-project/resources/images/tour-nav-image.png");
+    background-image: url("../images/tour-nav-image.png");
 }
 
 .contact-background{
-    background-image: url("/artist-project/resources/images/contact-nav-image.png");
+    background-image: url("../images/contact-nav-image.png");
 }
 
 /*Logga i mitten*/

@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let musicNav = document.getElementById('music-nav');
     musicNav.addEventListener('mouseover', function(){
         if(!window.location.href.includes('music.html')) {
-            document.body.style.backgroundImage = "url('/artist-project/resources/images/music-nav-image.png')";
+            document.body.style.backgroundImage = "url('resources/images/music-nav-image.png')";
         }
     });
 
     musicNav.addEventListener('mouseout', () => {
         if(!window.location.href.includes('music.html')) {
-            document.body.style.backgroundImage = "url('/artist-project/resources/images/background.png')";
+            document.body.style.backgroundImage = "url('resources/images/background.png')";
         }
     });
 
@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let videoNav = document.getElementById('video-nav');
     videoNav.addEventListener('mouseover', function(){
         if(!window.location.href.includes('videos.html')) {
-            document.body.style.backgroundImage = "url('/artist-project/resources/images/video-nav-image.png')";
+            document.body.style.backgroundImage = "url('resources/images/video-nav-image.png')";
         }
     });
 
     videoNav.addEventListener('mouseout', () => {
         if(!window.location.href.includes('videos.html')) {
-            document.body.style.backgroundImage = "url('/artist-project/resources/images/background.png')";
+            document.body.style.backgroundImage = "url('resources/images/background.png')";
         }
     });
 
@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let tourNav = document.getElementById('tour-nav');
     tourNav.addEventListener('mouseover', function(){
         if(!window.location.href.includes('tour.html')) {
-            document.body.style.backgroundImage = "url('/artist-project/resources/images/tour-nav-image.png')";
+            document.body.style.backgroundImage = "url('resources/images/tour-nav-image.png')";
         }
         });
 
     tourNav.addEventListener('mouseout', () => {
         if(!window.location.href.includes('tour.html')) {
-            document.body.style.backgroundImage = "url('/artist-project/resources/images/background.png')";
+            document.body.style.backgroundImage = "url('resources/images/background.png')";
         }
         });
 
@@ -51,18 +51,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let contactNav = document.getElementById('contact-nav');
     contactNav.addEventListener('mouseover', function(){
         if(!window.location.href.includes('contact.html')) {
-            document.body.style.backgroundImage = "url('/artist-project/resources/images/contact-nav-image.png')";
+            document.body.style.backgroundImage = "url('resources/images/contact-nav-image.png')";
         }
         });
 
     contactNav.addEventListener('mouseout', () => {
         if(!window.location.href.includes('contact.html')) {
-            document.body.style.backgroundImage = "url('/artist-project/resources/images/background.png')";
+            document.body.style.backgroundImage = "url('resources/images/background.png')";
         }
         });
     
     
-    /*SCROLL EFFEKT*/
+    /*SCROLL EFFEKT - Animerar in och ut artwork*/
     const images = document.querySelectorAll('img');
 
     const observer = new IntersectionObserver((entries) => {
